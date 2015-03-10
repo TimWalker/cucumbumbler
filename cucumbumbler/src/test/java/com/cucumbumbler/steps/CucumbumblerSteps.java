@@ -1,5 +1,6 @@
 package com.cucumbumbler.app;
 
+import static org.junit.Assert.assertTrue;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -9,8 +10,9 @@ public class CucumbumblerSteps {
 
     @Given("^there are feature files present$")
     public void there_are_feature_files_present() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        Cucumbumbler cucumbumbler = new Cucumbumbler();
+        Boolean thereAreFeatureFilesPresent = cucumbumbler.thereAreFeatureFilesPresent();
+        assertTrue("There are feature files present.", thereAreFeatureFilesPresent);
     }
 
     @When("^I run \"(.*?)\"$")
