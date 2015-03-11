@@ -8,7 +8,7 @@ Feature: Cucumbumbler main functionality
     I'd like to organize a single source-of-truth in a "book" format using executable specifications
     So that I have a single, transparent, reference to the software endeavor
 
-    Given there are feature files present
+    Given there are feature files present in "/tmp/cucumbumbler/features/";
     When I run "make a book"
     Then an HTML book is generated that has test results
 
@@ -17,6 +17,6 @@ Feature: Cucumbumbler main functionality
   I'd like to be able to run manual and exploratory tests against the system
   So that I can perform the highest ROI kinds of manual testing and augment automation
 
-    Given there are feature files present
+    Given there are feature files present in "/tmp/cucumbumbler/features/";
     When I run "manual testing"
     Then Cucumbumbler interacts with a human to manually run tests

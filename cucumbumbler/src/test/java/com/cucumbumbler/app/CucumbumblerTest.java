@@ -1,5 +1,7 @@
 package com.cucumbumbler.app;
 
+import static org.junit.Assert.assertTrue;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -14,17 +16,34 @@ import org.apache.commons.io.FileUtils;
  */
 public class CucumbumblerTest extends TestCase {
 
-    public void testThatThereAreFeatureFilesPresentWhenEmpty()
+	String FEATURE_DIR = "/tmp/cucumbumbler/testfeatures";
+
+    public void testThatThereAreFeatureFilesPresentIsFalseWhenEmpty()
     {
         //Setup
         try {
-			FileUtils.deleteDirectory(new File("/tmp/cucumbumbler/testfeatures"));
+			FileUtils.deleteDirectory(new File(FEATURE_DIR));
 		} catch (IOException e) {
 			System.out.println("Exception deleting cucumber features directory: " + e.getMessage());
 		}
 
         Cucumbumbler cucumbumbler = new Cucumbumbler();
-
+        Boolean thereAreFeatureFilesPresent = cucumbumbler.thereAreFeatureFilesPresent(FEATURE_DIR);
+        assertFalse("Should be false when there are no feature files present.", thereAreFeatureFilesPresent);
+    }
+    
+    public void testThatThereAreFeatureFilesPresentIsTrueWhenNotEmpty()
+    {
+        //Setup
+        try {
+			FileUtils.deleteDirectory(new File(FEATURE_DIR));
+			FileUtils.forceMkdir(new File(FEATURE_DIR));
+		} catch (IOException e) {
+			System.out.println("Exception adding or deleting cucumber features directory: " + e.getMessage());
+		}
+        Cucumbumbler cucumbumbler = new Cucumbumbler();
+        Boolean thereAreFeatureFilesPresent = cucumbumbler.thereAreFeatureFilesPresent(FEATURE_DIR);
+        assertTrue("Should be true when there are feature files present.", thereAreFeatureFilesPresent);
     }
 
 }

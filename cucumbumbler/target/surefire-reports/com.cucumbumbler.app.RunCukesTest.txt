@@ -1,32 +1,32 @@
 -------------------------------------------------------------------------------
 Test set: com.cucumbumbler.app.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 4, Errors: 0, Skipped: 4, Time elapsed: 0.731 sec <<< FAILURE!
-Given there are feature files present(Scenario: Generate a book)  Time elapsed: 0.003 sec  <<< FAILURE!
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 4, Time elapsed: 0.987 sec <<< FAILURE!
+Given there are feature files present in "/tmp/cucumbumbler/features/";(Scenario: Generate a book)  Time elapsed: 0.005 sec  <<< FAILURE!
 java.lang.AssertionError: There are feature files present.
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
-	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present(CucumbumblerSteps.java:15)
-	at ✽.Given there are feature files present(com/cucumbumbler/app/Cucumbumbler.feature:11)
+	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present_in(CucumbumblerSteps.java:18)
+	at ✽.Given there are feature files present in "/tmp/cucumbumbler/features/";(com/cucumbumbler/app/Cucumbumbler.feature:11)
 
-Scenario: Generate a book  Time elapsed: 0.003 sec  <<< FAILURE!
+Scenario: Generate a book  Time elapsed: 0.007 sec  <<< FAILURE!
 java.lang.AssertionError: There are feature files present.
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
-	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present(CucumbumblerSteps.java:15)
-	at ✽.Given there are feature files present(com/cucumbumbler/app/Cucumbumbler.feature:11)
+	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present_in(CucumbumblerSteps.java:18)
+	at ✽.Given there are feature files present in "/tmp/cucumbumbler/features/";(com/cucumbumbler/app/Cucumbumbler.feature:11)
 
-Given there are feature files present(Scenario: Run a manual test)  Time elapsed: 0 sec  <<< FAILURE!
+Given there are feature files present in "/tmp/cucumbumbler/features/";(Scenario: Run a manual test)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: There are feature files present.
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
-	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present(CucumbumblerSteps.java:15)
-	at ✽.Given there are feature files present(com/cucumbumbler/app/Cucumbumbler.feature:20)
+	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present_in(CucumbumblerSteps.java:18)
+	at ✽.Given there are feature files present in "/tmp/cucumbumbler/features/";(com/cucumbumbler/app/Cucumbumbler.feature:20)
 
-Scenario: Run a manual test  Time elapsed: 0 sec  <<< FAILURE!
+Scenario: Run a manual test  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: There are feature files present.
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
-	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present(CucumbumblerSteps.java:15)
-	at ✽.Given there are feature files present(com/cucumbumbler/app/Cucumbumbler.feature:20)
+	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present_in(CucumbumblerSteps.java:18)
+	at ✽.Given there are feature files present in "/tmp/cucumbumbler/features/";(com/cucumbumbler/app/Cucumbumbler.feature:20)
 

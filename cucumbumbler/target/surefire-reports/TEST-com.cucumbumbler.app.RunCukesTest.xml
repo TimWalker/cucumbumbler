@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="4" time="0.731" errors="0" skipped="4" tests="8" name="com.cucumbumbler.app.RunCukesTest">
+<testsuite failures="4" time="0.987" errors="0" skipped="4" tests="8" name="com.cucumbumbler.app.RunCukesTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home/jre/lib"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="/Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefirebooter5241636817468773024.jar"/>
+    <property name="surefire.real.class.path" value="/Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefirebooter7636500356875584669.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/gf/df3dwv695xv6tn_jk3bk8dvw0000gn/T/"/>
     <property name="line.separator" value="
 "/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="/Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefirebooter5241636817468773024.jar /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefire4980090374047147340tmp /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefire8689560948604815602tmp"/>
+    <property name="sun.java.command" value="/Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefirebooter7636500356875584669.jar /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefire1232153348363954558tmp /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefire2450137499546045821tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -62,14 +62,14 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.003" classname="Scenario: Generate a book" name="Given there are feature files present">
+  <testcase time="0.005" classname="Scenario: Generate a book" name="Given there are feature files present in &quot;/tmp/cucumbumbler/features/&quot;;">
     <failure message="There are feature files present." type="java.lang.AssertionError">java.lang.AssertionError: There are feature files present.
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
-	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present(CucumbumblerSteps.java:15)
-	at ✽.Given there are feature files present(com/cucumbumbler/app/Cucumbumbler.feature:11)
+	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present_in(CucumbumblerSteps.java:18)
+	at ✽.Given there are feature files present in &quot;/tmp/cucumbumbler/features/&quot;;(com/cucumbumbler/app/Cucumbumbler.feature:11)
 </failure>
-    <system-out>@SLTests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec
+    <system-out>@SLTests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
 @SLRunning com.cucumbumbler.app.RunCukesTest
 Feature: Cucumbumbler main functionality
   In order to create a single source-of-truth about my product
@@ -77,56 +77,56 @@ Feature: Cucumbumbler main functionality
   I want to manage all my quadrant tests
 </system-out>
   </testcase>
-  <testcase time="0.003" classname="Scenario: Generate a book" name="Scenario: Generate a book">
+  <testcase time="0.007" classname="Scenario: Generate a book" name="Scenario: Generate a book">
     <failure message="There are feature files present." type="java.lang.AssertionError">java.lang.AssertionError: There are feature files present.
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
-	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present(CucumbumblerSteps.java:15)
-	at ✽.Given there are feature files present(com/cucumbumbler/app/Cucumbumbler.feature:11)
+	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present_in(CucumbumblerSteps.java:18)
+	at ✽.Given there are feature files present in &quot;/tmp/cucumbumbler/features/&quot;;(com/cucumbumbler/app/Cucumbumbler.feature:11)
 </failure>
   </testcase>
-  <testcase time="0.006" classname="Scenario: Generate a book" name="When I run &quot;make a book&quot;">
+  <testcase time="0.01" classname="Scenario: Generate a book" name="When I run &quot;make a book&quot;">
     <skipped/>
   </testcase>
-  <testcase time="0.007" classname="Scenario: Generate a book" name="Then an HTML book is generated that has test results">
+  <testcase time="0.011" classname="Scenario: Generate a book" name="Then an HTML book is generated that has test results">
     <skipped/>
   </testcase>
-  <testcase time="0" classname="Scenario: Run a manual test" name="Given there are feature files present">
+  <testcase time="0.001" classname="Scenario: Run a manual test" name="Given there are feature files present in &quot;/tmp/cucumbumbler/features/&quot;;">
     <failure message="There are feature files present." type="java.lang.AssertionError">java.lang.AssertionError: There are feature files present.
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
-	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present(CucumbumblerSteps.java:15)
-	at ✽.Given there are feature files present(com/cucumbumbler/app/Cucumbumbler.feature:20)
+	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present_in(CucumbumblerSteps.java:18)
+	at ✽.Given there are feature files present in &quot;/tmp/cucumbumbler/features/&quot;;(com/cucumbumbler/app/Cucumbumbler.feature:20)
 </failure>
     <system-out>
-  Scenario: Generate a book                              &amp;#27;[90m# com/cucumbumbler/app/Cucumbumbler.feature:6&amp;#27;[0m
+  Scenario: Generate a book                                                 &amp;#27;[90m# com/cucumbumbler/app/Cucumbumbler.feature:6&amp;#27;[0m
     As a process implementing software (or hardware) in any industry
     I&apos;d like to organize a single source-of-truth in a &quot;book&quot; format using executable specifications
     So that I have a single, transparent, reference to the software endeavor
 
-    &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mthere are feature files present&amp;#27;[0m                &amp;#27;[90m# CucumbumblerSteps.there_are_feature_files_present()&amp;#27;[0m
+    &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mthere are feature files present in &quot;&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m/tmp/cucumbumbler/features/&amp;#27;[0m&amp;#27;[31m&quot;;&amp;#27;[0m &amp;#27;[90m# CucumbumblerSteps.there_are_feature_files_present_in(String)&amp;#27;[0m
       &amp;#27;[31mjava.lang.AssertionError: There are feature files present.
       	at org.junit.Assert.fail(Assert.java:88)
       	at org.junit.Assert.assertTrue(Assert.java:41)
-      	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present(CucumbumblerSteps.java:15)
-      	at ✽.Given there are feature files present(com/cucumbumbler/app/Cucumbumbler.feature:11)
+      	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present_in(CucumbumblerSteps.java:18)
+      	at ✽.Given there are feature files present in &quot;/tmp/cucumbumbler/features/&quot;;(com/cucumbumbler/app/Cucumbumbler.feature:11)
       &amp;#27;[0m
-    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI run &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mmake a book&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                             &amp;#27;[90m# CucumbumblerSteps.i_run(String)&amp;#27;[0m
-    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36man HTML book is generated that has test results&amp;#27;[0m &amp;#27;[90m# CucumbumblerSteps.an_HTML_book_is_generated_that_has_test_results()&amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI run &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mmake a book&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                &amp;#27;[90m# CucumbumblerSteps.i_run(String)&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36man HTML book is generated that has test results&amp;#27;[0m                    &amp;#27;[90m# CucumbumblerSteps.an_HTML_book_is_generated_that_has_test_results()&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase time="0" classname="Scenario: Run a manual test" name="Scenario: Run a manual test">
+  <testcase time="0.001" classname="Scenario: Run a manual test" name="Scenario: Run a manual test">
     <failure message="There are feature files present." type="java.lang.AssertionError">java.lang.AssertionError: There are feature files present.
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
-	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present(CucumbumblerSteps.java:15)
-	at ✽.Given there are feature files present(com/cucumbumbler/app/Cucumbumbler.feature:20)
+	at com.cucumbumbler.app.CucumbumblerSteps.there_are_feature_files_present_in(CucumbumblerSteps.java:18)
+	at ✽.Given there are feature files present in &quot;/tmp/cucumbumbler/features/&quot;;(com/cucumbumbler/app/Cucumbumbler.feature:20)
 </failure>
   </testcase>
-  <testcase time="0.001" classname="Scenario: Run a manual test" name="When I run &quot;manual testing&quot;">
+  <testcase time="0.002" classname="Scenario: Run a manual test" name="When I run &quot;manual testing&quot;">
     <skipped/>
   </testcase>
-  <testcase time="0.003" classname="Scenario: Run a manual test" name="Then Cucumbumbler interacts with a human to manually run tests">
+  <testcase time="0.004" classname="Scenario: Run a manual test" name="Then Cucumbumbler interacts with a human to manually run tests">
     <skipped/>
   </testcase>
 </testsuite>
