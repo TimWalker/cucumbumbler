@@ -6,8 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    format = {"pretty"},
-    features="src/test/resources"
+		glue = "com.cucumbumbler.steps",
+		features = "src/test/resources/com/cucumbumbler/app",
+		tags = "~@wip",
+		format = "pretty"
 )
 public class RunCukesTest {
 }

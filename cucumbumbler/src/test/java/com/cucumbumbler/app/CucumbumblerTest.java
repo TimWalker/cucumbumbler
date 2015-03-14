@@ -16,7 +16,7 @@ import org.apache.commons.io.FileUtils;
  */
 public class CucumbumblerTest extends TestCase {
 
-	String FEATURE_DIR = "/tmp/cucumbumbler/testfeatures";
+	String FEATURE_DIR = "/tmp/cucumbumbler/features";
 
     public void testThatThereAreFeatureFilesPresentIsFalseWhenEmpty()
     {
