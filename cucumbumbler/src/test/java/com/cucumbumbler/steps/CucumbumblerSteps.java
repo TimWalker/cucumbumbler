@@ -15,21 +15,25 @@ import cucumber.api.java.en.When;
 import cucumber.api.PendingException;
 
 public class CucumbumblerSteps {
+	
+	String featurePath = "";
 
     @Given("^there are feature files present in \"(.*?)\";$")
-    public void there_are_feature_files_present_in(String feature_path) throws Throwable {
-    	deployTestFeatures(feature_path);
+    public void there_are_feature_files_present_in(String featurePath) throws Throwable {
+    	this.featurePath = featurePath;
+    	deployTestFeatures(featurePath);
     	Cucumbumbler cucumbumbler = new Cucumbumbler();
-        Boolean thereAreFeatureFilesPresent = cucumbumbler.thereAreFeatureFilesPresent(feature_path);
+        Boolean thereAreFeatureFilesPresent = cucumbumbler.thereAreFeatureFilesPresent(featurePath);
         assertTrue("There should be feature files present.", thereAreFeatureFilesPresent);
     }
     
 	@When("^I run \"(.*?)\"$")
-    public void i_run(String arg1) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void i_run(String command) throws Throwable {
+		if (command.equals("make a book")) {
+			makeABook();
+		}
     }
-
+	
     @Then("^an HTML book is generated that has test results$")
     public void an_HTML_book_is_generated_that_has_test_results() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
@@ -52,4 +56,9 @@ public class CucumbumblerSteps {
     	}
     }
 
+    private void makeABook()
+    {
+    	Cucumbumbler cucumbumbler = new Cucumbumbler();
+    	cucumbumbler.makeABook(featurePath);
+    }
 }

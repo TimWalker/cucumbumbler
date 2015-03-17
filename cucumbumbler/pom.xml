@@ -13,19 +13,24 @@
   <surefire.version>4.11</surefire.version>
   <cucumber-junit.version>1.2.2</cucumber-junit.version>
   <commons-io.version>1.3.2</commons-io.version>
+  <gherkin.version>2.12.2</gherkin.version>
 </properties>
 <dependencies>
   <dependency>
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>
     <version>${commons-io.version}</version>
-    <scope>test</scope>
   </dependency>
   <dependency>
     <groupId>info.cukes</groupId>
     <artifactId>cucumber-java</artifactId>
     <version>${cucumber.version}</version>
     <scope>test</scope>
+  </dependency>
+  <dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>${gherkin.version}</version>
   </dependency>
   <dependency>
     <groupId>info.cukes</groupId>

@@ -31,7 +31,7 @@ public class CucumbumblerTest extends TestCase {
         Boolean thereAreFeatureFilesPresent = cucumbumbler.thereAreFeatureFilesPresent(FEATURE_DIR);
         assertFalse("Should be false when there are no feature files present.", thereAreFeatureFilesPresent);
     }
-    
+  
     public void testThatThereAreFeatureFilesPresentIsTrueWhenNotEmpty()
     {
         //Setup
@@ -45,5 +45,31 @@ public class CucumbumblerTest extends TestCase {
         Boolean thereAreFeatureFilesPresent = cucumbumbler.thereAreFeatureFilesPresent(FEATURE_DIR);
         assertTrue("Should be true when there are feature files present.", thereAreFeatureFilesPresent);
     }
+    
+    public void testItShouldGetFeaturesFilesAtADirectory() {
+    	deployTestFeatures(FEATURE_DIR);
+        Cucumbumbler cucumbumbler = new Cucumbumbler();
+        cucumbumbler.getFeatures(FEATURE_DIR);
+        assertTrue("there should be an array of features: ", cucumbumbler.features.size() != 0);
+    }
 
+    public void testItShouldParseItsFeatures() {
+    	deployTestFeatures(FEATURE_DIR);
+        Cucumbumbler cucumbumbler = new Cucumbumbler();
+        cucumbumbler.getFeatures(FEATURE_DIR);
+        cucumbumbler.parseFeatures();
+        for (Feature feature : cucumbumbler.features) {
+        	assertTrue("feature should be marked as parsed: ", feature.parsed);
+        }
+    }
+    //todo: refactor duplication
+    private void deployTestFeatures(String feature_path) {
+    	String srcDir = "src/test/resources/com/cucumbumbler/test_features";
+    	String dstDir = feature_path;
+    	try {
+    		FileUtils.copyDirectory(new File(srcDir), new File(dstDir));
+    	} catch (IOException e) {
+    		e.printStackTrace();
+    	}
+    }
 }
