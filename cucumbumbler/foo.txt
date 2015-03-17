@@ -1,0 +1,319 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cucumbumbler 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cucumbumbler ---
+[INFO] Deleting /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ cucumbumbler ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cucumbumbler ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 3 source files to /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:testResources (default-testResources) @ cucumbumbler ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cucumbumbler ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 3 source files to /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.7.2:test (default-test) @ cucumbumbler ---
+[INFO] Surefire report directory: /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.cucumbumbler.app.CucumbumblerTest
+Parsing: /tmp/cucumbumbler/features/Introduction.feature
+----> gherkin: 
+@wip
+Feature: Intoduction
+	Cucumbumbler is a Cucumber Bumbler. By that we mean it Bumbles Cucumbers. 
+	
+	To Bumble your Cucumber means you want to manage Cucumber to provide full application
+	life cycle Specifications, including the aggregation of them, to specify all aspects of
+	the system, for example, in all the testing quadrants, including: 
+	   manual testing, functional, non-functional and integration with static code analysis
+	
+	Background: What are Cucumber Feature Files   
+    
+    Scenario: I use Cucumber features to create a living system "book"
+       	In order to create a single source-of-truth about my product
+  		As a system developing a product
+  		I want to manage all my quadrant tests
+
+    	As a process implementing software (or hardware) in any industry
+    	I'd like to organize a single source-of-truth in a "book" format using executable specifications
+    	So that I have a single, transparent, reference to the software endeavor
+
+    	Given there are feature files present in "/tmp/cucumbumbler/features/";
+    	When I run "make a book"
+    	Then an HTML book is generated that has test results
+
+  	Scenario: Run a manual test
+  		As a process implementing software (or hardware) in any industry
+  		I'd like to be able to run manual and exploratory tests against the system
+  		So that I can perform the highest ROI kinds of manual testing and augment automation
+
+    	Given there are feature files present in "/tmp/cucumbumbler/features/";
+    	When I run "manual testing"
+    	Then Cucumbumbler interacts with a human to manually run tests
+     
+** Parsed **/tmp/cucumbumbler/features/Introduction.feature
+---> json: [
+  {
+    "id": "intoduction",
+    "tags": [
+      {
+        "name": "@wip",
+        "line": 1
+      }
+    ],
+    "description": "Cucumbumbler is a Cucumber Bumbler. By that we mean it Bumbles Cucumbers. \n\nTo Bumble your Cucumber means you want to manage Cucumber to provide full application\nlife cycle Specifications, including the aggregation of them, to specify all aspects of\nthe system, for example, in all the testing quadrants, including: \n  manual testing, functional, non-functional and integration with static code analysis",
+    "name": "Intoduction",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "description": "",
+        "name": "What are Cucumber Feature Files",
+        "keyword": "Background",
+        "line": 10,
+        "type": "background"
+      },
+      {
+        "id": "intoduction;i-use-cucumber-features-to-create-a-living-system-\"book\"",
+        "description": " \tIn order to create a single source-of-truth about my product\nAs a system developing a product\nI want to manage all my quadrant tests\n\nAs a process implementing software (or hardware) in any industry\nI\u0027d like to organize a single source-of-truth in a \"book\" format using executable specifications\nSo that I have a single, transparent, reference to the software endeavor",
+        "name": "I use Cucumber features to create a living system \"book\"",
+        "keyword": "Scenario",
+        "line": 12,
+        "steps": [
+          {
+            "name": "there are feature files present in \"/tmp/cucumbumbler/features/\";",
+            "keyword": "Given ",
+            "line": 21
+          },
+          {
+            "name": "I run \"make a book\"",
+            "keyword": "When ",
+            "line": 22
+          },
+          {
+            "name": "an HTML book is generated that has test results",
+            "keyword": "Then ",
+            "line": 23
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "intoduction;run-a-manual-test",
+        "description": "As a process implementing software (or hardware) in any industry\nI\u0027d like to be able to run manual and exploratory tests against the system\nSo that I can perform the highest ROI kinds of manual testing and augment automation",
+        "name": "Run a manual test",
+        "keyword": "Scenario",
+        "line": 25,
+        "steps": [
+          {
+            "name": "there are feature files present in \"/tmp/cucumbumbler/features/\";",
+            "keyword": "Given ",
+            "line": 30
+          },
+          {
+            "name": "I run \"manual testing\"",
+            "keyword": "When ",
+            "line": 31
+          },
+          {
+            "name": "Cucumbumbler interacts with a human to manually run tests",
+            "keyword": "Then ",
+            "line": 32
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "/tmp/cucumbumbler/features/Introduction.feature"
+  }
+]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.332 sec
+Running com.cucumbumbler.app.RunCukesTest
+Feature: Cucumbumbler main functionality
+  In order to create a single source-of-truth about my product
+  As a system developing a product
+  I want to manage all my quadrant tests
+Parsing: /tmp/cucumbumbler/features/Introduction.feature
+----> gherkin: 
+@wip
+Feature: Intoduction
+	Cucumbumbler is a Cucumber Bumbler. By that we mean it Bumbles Cucumbers. 
+	
+	To Bumble your Cucumber means you want to manage Cucumber to provide full application
+	life cycle Specifications, including the aggregation of them, to specify all aspects of
+	the system, for example, in all the testing quadrants, including: 
+	   manual testing, functional, non-functional and integration with static code analysis
+	
+	Background: What are Cucumber Feature Files   
+    
+    Scenario: I use Cucumber features to create a living system "book"
+       	In order to create a single source-of-truth about my product
+  		As a system developing a product
+  		I want to manage all my quadrant tests
+
+    	As a process implementing software (or hardware) in any industry
+    	I'd like to organize a single source-of-truth in a "book" format using executable specifications
+    	So that I have a single, transparent, reference to the software endeavor
+
+    	Given there are feature files present in "/tmp/cucumbumbler/features/";
+    	When I run "make a book"
+    	Then an HTML book is generated that has test results
+
+  	Scenario: Run a manual test
+  		As a process implementing software (or hardware) in any industry
+  		I'd like to be able to run manual and exploratory tests against the system
+  		So that I can perform the highest ROI kinds of manual testing and augment automation
+
+    	Given there are feature files present in "/tmp/cucumbumbler/features/";
+    	When I run "manual testing"
+    	Then Cucumbumbler interacts with a human to manually run tests
+     
+** Parsed **/tmp/cucumbumbler/features/Introduction.feature
+---> json: [
+  {
+    "id": "intoduction",
+    "tags": [
+      {
+        "name": "@wip",
+        "line": 1
+      }
+    ],
+    "description": "Cucumbumbler is a Cucumber Bumbler. By that we mean it Bumbles Cucumbers. \n\nTo Bumble your Cucumber means you want to manage Cucumber to provide full application\nlife cycle Specifications, including the aggregation of them, to specify all aspects of\nthe system, for example, in all the testing quadrants, including: \n  manual testing, functional, non-functional and integration with static code analysis",
+    "name": "Intoduction",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "description": "",
+        "name": "What are Cucumber Feature Files",
+        "keyword": "Background",
+        "line": 10,
+        "type": "background"
+      },
+      {
+        "id": "intoduction;i-use-cucumber-features-to-create-a-living-system-\"book\"",
+        "description": " \tIn order to create a single source-of-truth about my product\nAs a system developing a product\nI want to manage all my quadrant tests\n\nAs a process implementing software (or hardware) in any industry\nI\u0027d like to organize a single source-of-truth in a \"book\" format using executable specifications\nSo that I have a single, transparent, reference to the software endeavor",
+        "name": "I use Cucumber features to create a living system \"book\"",
+        "keyword": "Scenario",
+        "line": 12,
+        "steps": [
+          {
+            "name": "there are feature files present in \"/tmp/cucumbumbler/features/\";",
+            "keyword": "Given ",
+            "line": 21
+          },
+          {
+            "name": "I run \"make a book\"",
+            "keyword": "When ",
+            "line": 22
+          },
+          {
+            "name": "an HTML book is generated that has test results",
+            "keyword": "Then ",
+            "line": 23
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "intoduction;run-a-manual-test",
+        "description": "As a process implementing software (or hardware) in any industry\nI\u0027d like to be able to run manual and exploratory tests against the system\nSo that I can perform the highest ROI kinds of manual testing and augment automation",
+        "name": "Run a manual test",
+        "keyword": "Scenario",
+        "line": 25,
+        "steps": [
+          {
+            "name": "there are feature files present in \"/tmp/cucumbumbler/features/\";",
+            "keyword": "Given ",
+            "line": 30
+          },
+          {
+            "name": "I run \"manual testing\"",
+            "keyword": "When ",
+            "line": 31
+          },
+          {
+            "name": "Cucumbumbler interacts with a human to manually run tests",
+            "keyword": "Then ",
+            "line": 32
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "/tmp/cucumbumbler/features/Introduction.feature"
+  }
+]
+
+  Scenario: Generate a book                                                 [90m# Cucumbumbler.feature:6[0m
+    As a process implementing software (or hardware) in any industry
+    I'd like to organize a single source-of-truth in a "book" format using executable specifications
+    So that I have a single, transparent, reference to the software endeavor
+
+    [32mGiven [0m[32mthere are feature files present in "[0m[32m[1m/tmp/cucumbumbler/features/[0m[32m";[0m [90m# CucumbumblerSteps.there_are_feature_files_present_in(String)[0m
+    [32mWhen [0m[32mI run "[0m[32m[1mmake a book[0m[32m"[0m                                                [90m# CucumbumblerSteps.i_run(String)[0m
+    [33mThen [0m[33man HTML book is generated that has test results[0m                    [90m# CucumbumblerSteps.an_HTML_book_is_generated_that_has_test_results()[0m
+      [31mcucumber.api.PendingException: TODO: implement me
+      	at com.cucumbumbler.steps.CucumbumblerSteps.an_HTML_book_is_generated_that_has_test_results(CucumbumblerSteps.java:40)
+      	at ✽.Then an HTML book is generated that has test results(Cucumbumbler.feature:13)
+      [0m
+
+  Scenario: Run a manual test                                               [90m# Cucumbumbler.feature:15[0m
+    As a process implementing software (or hardware) in any industry
+    I'd like to be able to run manual and exploratory tests against the system
+    So that I can perform the highest ROI kinds of manual testing and augment automation
+
+    [32mGiven [0m[32mthere are feature files present in "[0m[32m[1m/tmp/cucumbumbler/features/[0m[32m";[0m [90m# CucumbumblerSteps.there_are_feature_files_present_in(String)[0m
+    [32mWhen [0m[32mI run "[0m[32m[1mmanual testing[0m[32m"[0m                                             [90m# CucumbumblerSteps.i_run(String)[0m
+    [33mThen [0m[33mCucumbumbler interacts with a human to manually run tests[0m          [90m# CucumbumblerSteps.cucumbumbler_interacts_with_a_human_to_manually_run_tests()[0m
+      [31mcucumber.api.PendingException: TODO: implement me
+      	at com.cucumbumbler.steps.CucumbumblerSteps.cucumbumbler_interacts_with_a_human_to_manually_run_tests(CucumbumblerSteps.java:46)
+      	at ✽.Then Cucumbumbler interacts with a human to manually run tests(Cucumbumbler.feature:22)
+      [0m
+
+2 Scenarios ([33m2 pending[0m)
+6 Steps ([33m2 pending[0m, [32m4 passed[0m)
+0m0.186s
+
+cucumber.api.PendingException: TODO: implement me
+	at com.cucumbumbler.steps.CucumbumblerSteps.an_HTML_book_is_generated_that_has_test_results(CucumbumblerSteps.java:40)
+	at ✽.Then an HTML book is generated that has test results(Cucumbumbler.feature:13)
+
+cucumber.api.PendingException: TODO: implement me
+	at com.cucumbumbler.steps.CucumbumblerSteps.cucumbumbler_interacts_with_a_human_to_manually_run_tests(CucumbumblerSteps.java:46)
+	at ✽.Then Cucumbumbler interacts with a human to manually run tests(Cucumbumbler.feature:22)
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.765 sec
+
+Results :
+
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 4
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ cucumbumbler ---
+[INFO] Building jar: /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/cucumbumbler-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cucumbumbler ---
+[INFO] Installing /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/cucumbumbler-1.0-SNAPSHOT.jar to /Users/timwalker/.m2/repository/com/cucumbumbler/app/cucumbumbler/1.0-SNAPSHOT/cucumbumbler-1.0-SNAPSHOT.jar
+[INFO] Installing /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/pom.xml to /Users/timwalker/.m2/repository/com/cucumbumbler/app/cucumbumbler/1.0-SNAPSHOT/cucumbumbler-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.019s
+[INFO] Finished at: Mon Mar 16 19:49:49 MDT 2015
+[INFO] Final Memory: 17M/495M
+[INFO] ------------------------------------------------------------------------

@@ -46,8 +46,8 @@ public class Cucumbumbler
     	List filterList = new ArrayList();
     	filterList.add("@wip");
     	StringBuilder json = new StringBuilder();
-    	JSONFormatter jsonFormatter = new JSONFormatter(json);
-    	FilterFormatter filterFormatter = new FilterFormatter(jsonFormatter, filterList);
+    	CucumbumblerBookFormatter cucumbumblerBookFormatter = new CucumbumblerBookFormatter(json);
+    	FilterFormatter filterFormatter = new FilterFormatter(cucumbumblerBookFormatter, filterList);
     	Parser parser = new Parser(filterFormatter);
 		for (Feature feature : features) {
 			String gherkin = "";
@@ -63,8 +63,8 @@ public class Cucumbumbler
 			}
 			feature.parsed = true;
 		}
-		jsonFormatter.done();
-		jsonFormatter.close();
+		cucumbumblerBookFormatter.done();
+		cucumbumblerBookFormatter.close();
 		System.out.println("---> json: " + json);
     }
 }
