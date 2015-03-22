@@ -168,19 +168,16 @@ public class CucumbumblerBookFormatter implements Reporter, Formatter {
 
     public void done() {
         try {
+        	out.append("<html>");
 			out.append(featureMaps.toString());
-			//out.append(gson().toJson(featureMaps));
+        	out.append("</html>");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Error in JSONFormatter: " + e.getMessage());
 		}
-        // We're *not* closing the stream here.
-        // https://github.com/cucumber/gherkin/issues/151
-        // https://github.com/cucumber/cucumber-jvm/issues/96
     }
 
     public void close() {
-    	;    
+    	;
     }
 
     public void syntaxError(String state, String event, List<String> legalEvents, String uri, Integer line) {

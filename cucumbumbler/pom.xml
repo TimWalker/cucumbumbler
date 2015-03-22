@@ -14,8 +14,14 @@
   <cucumber-junit.version>1.2.2</cucumber-junit.version>
   <commons-io.version>1.3.2</commons-io.version>
   <gherkin.version>2.12.2</gherkin.version>
+  <htmlparser.version>1.6</htmlparser.version>
 </properties>
 <dependencies>
+  <dependency>
+	<groupId>org.htmlparser</groupId>
+	<artifactId>htmlparser</artifactId>
+	<version>${htmlparser.version}</version>
+  </dependency>
   <dependency>
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>

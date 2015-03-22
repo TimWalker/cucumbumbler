@@ -10,7 +10,7 @@ Feature: Cucumbumbler main functionality
 
   Given there are feature files present in "/tmp/cucumbumbler/features/";
   When I run "make a book"
-  Then an HTML book is generated that has test results
+  Then an HTML book is generated
 
   Scenario: Run a manual test
   As a process implementing software (or hardware) in any industry

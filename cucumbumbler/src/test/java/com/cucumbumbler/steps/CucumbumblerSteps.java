@@ -31,13 +31,16 @@ public class CucumbumblerSteps {
     public void i_run(String command) throws Throwable {
 		if (command.equals("make a book")) {
 			makeABook();
+		} else {
+	        throw new PendingException();	
 		}
+	
     }
 	
-    @Then("^an HTML book is generated that has test results$")
-    public void an_HTML_book_is_generated_that_has_test_results() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    @Then("^an HTML book is generated$")
+    public void an_HTML_book_is_generated() throws Throwable {
+    	File file = new File("/tmp/cucumbumbler/newBook.html");
+    	assertTrue("A book was created: ", file.isFile());
     }
 
     @Then("^Cucumbumbler interacts with a human to manually run tests$")

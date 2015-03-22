@@ -2,6 +2,7 @@ package com.cucumbumbler.app;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -11,6 +12,10 @@ import java.util.List;
 import java.util.Scanner;
 
 import org.apache.commons.io.FileUtils;
+import org.htmlparser.Node;
+import org.htmlparser.util.NodeList;
+import org.htmlparser.util.ParserException;
+import org.htmlparser.util.ParserFeedback;
 
 import gherkin.parser.Parser;
 import gherkin.formatter.*;
@@ -27,11 +32,20 @@ public class Cucumbumbler
     public void makeABook(String featurePath) 
     {
     	getFeatures(featurePath);
-    	parseFeatures();
-    	//outputAsBook();
+    	StringBuilder bookContents = parseFeatures();
+    	File bookPath = new File(featurePath).getParentFile();
+    	outputAsBook(bookPath + "/newBook.html", bookContents);
     }
     
-    public void getFeatures(String featurePath)
+    public void outputAsBook(String filePath, StringBuilder bookContents) {
+    	try {
+			FileUtils.writeStringToFile(new File(filePath), bookContents.toString()) ;
+		} catch (IOException e) {
+			System.out.println("Error writing to your new book: " + e.getMessage());
+		}
+	}
+
+	public void getFeatures(String featurePath)
     {
     	@SuppressWarnings("unchecked")
 		Iterator<File> it = FileUtils.iterateFiles(new File(featurePath), null, true);
@@ -41,30 +55,44 @@ public class Cucumbumbler
         }
     }
     
-    public void parseFeatures() 
+    public StringBuilder parseFeatures() 
     {
     	List filterList = new ArrayList();
     	filterList.add("@wip");
-    	StringBuilder json = new StringBuilder();
-    	CucumbumblerBookFormatter cucumbumblerBookFormatter = new CucumbumblerBookFormatter(json);
+    	StringBuilder bookContents = new StringBuilder();
+    	CucumbumblerBookFormatter cucumbumblerBookFormatter = new CucumbumblerBookFormatter(bookContents);
     	FilterFormatter filterFormatter = new FilterFormatter(cucumbumblerBookFormatter, filterList);
     	Parser parser = new Parser(filterFormatter);
 		for (Feature feature : features) {
 			String gherkin = "";
 			try {
-				System.out.println("Parsing: " + feature.name);
+				/* read feature file */
 				gherkin = new Scanner(new File(feature.name)).useDelimiter("\\Z").next();
-				System.out.println("----> gherkin: \n" + gherkin);
+                /* parse cucumber */
 				parser.parse(gherkin, feature.name, 0);
-				System.out.println("** Parsed **" + feature.name);
 			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+	        	System.out.println("Error parsing Cucumber:   " + e.getMessage());
 			}
 			feature.parsed = true;
 		}
 		cucumbumblerBookFormatter.done();
 		cucumbumblerBookFormatter.close();
-		System.out.println("---> json: " + json);
+		return bookContents;
     }
+
+	public boolean validateHTML(StringBuilder bookContents) {
+		try
+        {
+            org.htmlparser.Parser htmlparser = new org.htmlparser.Parser();
+			htmlparser.setInputHTML(bookContents.toString());
+			htmlparser.setEncoding("UTF-8");    
+            NodeList list = htmlparser.parse (null);   
+            return (list.size() > 0);
+        }
+        catch (ParserException pe)
+        {
+        	System.out.println("Error parsing generated HTML." + pe.getMessage());
+        	return false;
+        }
+	}
 }
