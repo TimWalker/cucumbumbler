@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.cucumbumbler.app.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.69 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.933 sec

@@ -1,5 +1,5 @@
 @wip
-Feature: Intoduction
+Feature: Introduction
 	Cucumbumbler is a Cucumber Bumbler. By that we mean it Bumbles Cucumbers. 
 	
 	To Bumble your Cucumber means you want to manage Cucumber to provide full application
