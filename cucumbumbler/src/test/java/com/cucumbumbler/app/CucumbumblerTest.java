@@ -12,7 +12,7 @@ import junit.framework.TestSuite;
 import org.apache.commons.io.FileUtils;
 
 /**
- * Unit test for simple App.
+ * Unit test for main cucumbumbler class.
  */
 public class CucumbumblerTest extends TestCase {
 
