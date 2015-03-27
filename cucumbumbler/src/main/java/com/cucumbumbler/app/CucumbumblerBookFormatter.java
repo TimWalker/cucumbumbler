@@ -46,11 +46,11 @@ public class CucumbumblerBookFormatter implements Reporter, Formatter {
 			startTag = "<H3>";
 			endTag = "</H3>";
 		}
-		if (tag.equals("featureName")){
+		else if (tag.equals("featureName")){
 			startTag = "<H1>";
 			endTag = "</H1>";
 		}
-		else if (tag.equals("background")){
+		else if (tag.equals("backgroundName")){
 			startTag = "<H2>";
 			endTag = "</H2>";
 		}
@@ -59,24 +59,24 @@ public class CucumbumblerBookFormatter implements Reporter, Formatter {
 			endTag = "</H3>";
 		}
 		else if (tag.equals("scenarioDesc")){
-			startTag = "<H4>";
-			endTag = "</H4>";
+			startTag = "<div>";
+			endTag = "</div>";
 		}
 		else if (tag.equals("scenarioOutline")){
-			startTag = "<H4>";
-			endTag = "</H4>";
+			startTag = "<b>";
+			endTag = "</b>";
 		}
 		else if (tag.equals("examples")){
 			startTag = "<H5>";
 			endTag = "</H6>";
 		}
 		else if (tag.equals("stepKeyword")){
-			startTag = "<b>";
-			endTag = "</b>";
+			startTag = "<pre>";
+			endTag = "</pre>";
 		}
 		else if (tag.equals("stepName")){
-			startTag = "";
-			endTag = "";
+			startTag = "<pre>";
+			endTag = "<pre>";
 		}
 		else {
 			startTag = "<p>";
@@ -118,6 +118,11 @@ public class CucumbumblerBookFormatter implements Reporter, Formatter {
 		to_tag("featureDesc", feature.getDescription());
 	}
 	
+	public void background(Background background) {
+		to_tag("backgroundKeyword", background.getKeyword());
+		to_tag("backgroundName", background.getName());		
+	}
+	
 	public void scenarioOutline(ScenarioOutline scenarioOutline) {
 		to_tag("scenario", scenarioOutline.getDescription());
 	}
@@ -137,12 +142,6 @@ public class CucumbumblerBookFormatter implements Reporter, Formatter {
 
 	@Override
 	public void startOfScenarioLifeCycle(Scenario scenario) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void background(Background background) {
 		// TODO Auto-generated method stub
 		
 	}

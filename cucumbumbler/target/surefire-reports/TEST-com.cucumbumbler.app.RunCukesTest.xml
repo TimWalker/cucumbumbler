@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.609" errors="0" skipped="3" tests="9" name="com.cucumbumbler.app.RunCukesTest">
+<testsuite failures="0" time="0.732" errors="0" skipped="3" tests="9" name="com.cucumbumbler.app.RunCukesTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home/jre/lib"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="/Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefirebooter5053540215198316185.jar"/>
+    <property name="surefire.real.class.path" value="/Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefirebooter7527047851262459347.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/gf/df3dwv695xv6tn_jk3bk8dvw0000gn/T/"/>
     <property name="line.separator" value="
 "/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="/Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefirebooter5053540215198316185.jar /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefire799881794201847295tmp /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefire504460760032458434tmp"/>
+    <property name="sun.java.command" value="/Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefirebooter7527047851262459347.jar /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefire4607974416894235023tmp /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/target/surefire/surefire611484078025819409tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -65,16 +65,16 @@
   <testcase time="0" classname="Scenario: Generate a book" name="Given there are feature files present in &quot;/tmp/cucumbumbler/features/&quot;;"/>
   <testcase time="0" classname="Scenario: Generate a book" name="When I run &quot;make a book&quot;"/>
   <testcase time="0" classname="Scenario: Generate a book" name="Then an HTML book is generated"/>
-  <testcase time="0" classname="Scenario: Generate a book" name="Scenario: Generate a book"/>
+  <testcase time="0.001" classname="Scenario: Generate a book" name="Scenario: Generate a book"/>
   <testcase time="0" classname="Scenario: Run a manual test" name="Given there are feature files present in &quot;/tmp/cucumbumbler/features/&quot;;"/>
-  <testcase time="0.004" classname="Scenario: Run a manual test" name="When I run &quot;manual testing&quot;">
+  <testcase time="0.007" classname="Scenario: Run a manual test" name="When I run &quot;manual testing&quot;">
     <skipped/>
   </testcase>
-  <testcase time="0.004" classname="Scenario: Run a manual test" name="Then Cucumbumbler interacts with a human to manually run tests">
+  <testcase time="0.007" classname="Scenario: Run a manual test" name="Then Cucumbumbler interacts with a human to manually run tests">
     <skipped/>
   </testcase>
-  <testcase time="0.005" classname="Scenario: Run a manual test" name="Scenario: Run a manual test">
+  <testcase time="0.007" classname="Scenario: Run a manual test" name="Scenario: Run a manual test">
     <skipped/>
   </testcase>
-  <testcase time="0.005" classname="Scenario: Run a manual test" name="Scenario: Run a manual test"/>
+  <testcase time="0.008" classname="Scenario: Run a manual test" name="Scenario: Run a manual test"/>
 </testsuite>
