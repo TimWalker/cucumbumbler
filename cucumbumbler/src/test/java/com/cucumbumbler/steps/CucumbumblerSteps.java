@@ -31,10 +31,11 @@ public class CucumbumblerSteps {
     public void i_run(String command) throws Throwable {
 		if (command.equals("make a book")) {
 			makeABook();
+		} else if (command.equals("manual testing")){
+			manualTesting();
 		} else {
 	        throw new PendingException();	
-		}
-	
+		}	
     }
 	
     @Then("^an HTML book is generated$")
@@ -43,8 +44,8 @@ public class CucumbumblerSteps {
     	assertTrue("A book was created: ", file.isFile());
     }
 
-    @Then("^Cucumbumbler interacts with a human to manually run tests$")
-    public void cucumbumbler_interacts_with_a_human_to_manually_run_tests() throws Throwable {
+    @Then("^Cucumbumbler generates test results from the manual human interaction$")
+    public void cucumbumbler_generates_test_results_from_the_manual_human_interaction() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
@@ -63,5 +64,11 @@ public class CucumbumblerSteps {
     {
     	Cucumbumbler cucumbumbler = new Cucumbumbler();
     	cucumbumbler.makeABook(featurePath);
+    }
+    
+    private void manualTesting()
+    {
+    	Cucumbumbler cucumbumbler = new Cucumbumbler();
+    	cucumbumbler.manualTesting(featurePath);
     }
 }

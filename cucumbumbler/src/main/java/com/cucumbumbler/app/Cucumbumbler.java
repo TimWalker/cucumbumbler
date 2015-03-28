@@ -57,7 +57,7 @@ public class Cucumbumbler
     
     public StringBuilder parseFeatures() 
     {
-    	List filterList = new ArrayList();
+    	List<String> filterList = new ArrayList<String>();
     	filterList.add("@wip");
     	StringBuilder bookContents = new StringBuilder();
     	CucumbumblerBookFormatter cucumbumblerBookFormatter = new CucumbumblerBookFormatter(bookContents);
@@ -94,5 +94,30 @@ public class Cucumbumbler
         	System.out.println("Error parsing generated HTML." + pe.getMessage());
         	return false;
         }
+	}
+
+	public String manualTesting(String featurePath)
+	{
+		return "";
+	}
+	
+	public String parseFeaturesAsHumanTester(Bumbler bumbler) {
+    	List<String> filterList = new ArrayList<String>();
+    	filterList.add("@wip");
+    	StringBuilder results = new StringBuilder();
+    	CucumbumblerBumblerFormatter cucumbumblerBumblerFormatter = new CucumbumblerBumblerFormatter(results, bumbler);
+    	FilterFormatter filterFormatter = new FilterFormatter(cucumbumblerBumblerFormatter, filterList);
+    	Parser parser = new Parser(filterFormatter);
+		for (Feature feature : features) {
+			String gherkin = "";
+			try {
+				gherkin = new Scanner(new File(feature.name)).useDelimiter("\\Z").next();
+				parser.parse(gherkin, feature.name, 0);
+			} catch (FileNotFoundException e) {
+	        	System.out.println("Error parsing Cucumber:   " + e.getMessage());
+			}
+			feature.parsed = true;
+		}
+		return results.toString();
 	}
 }

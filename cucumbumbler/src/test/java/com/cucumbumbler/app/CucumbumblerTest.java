@@ -2,8 +2,10 @@ package com.cucumbumbler.app;
 
 import static org.junit.Assert.assertTrue;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -81,6 +83,14 @@ public class CucumbumblerTest extends TestCase {
         assertTrue("Book should be present: ", book.isFile());
     }
 
+    public void testManualTestingInteractsWithHumanWhenRunningSteps(){
+    	deployTestFeatures(FEATURE_DIR);
+        Cucumbumbler cucumbumbler = new Cucumbumbler();
+        cucumbumbler.getFeatures(FEATURE_DIR);
+        String testResults = cucumbumbler.parseFeaturesAsHumanTester(new FakeHuman());  
+        assertTrue("Manual test results should be present: ", testResults.length() > 0);
+    }
+    
     private void deployTestFeatures(String feature_path) {
     	String srcDir = "src/test/resources/com/cucumbumbler/test_features";
     	String dstDir = feature_path;
@@ -89,5 +99,18 @@ public class CucumbumblerTest extends TestCase {
     	} catch (IOException e) {
     		e.printStackTrace();
     	}
+    }   
+    
+    class FakeHuman implements Bumbler {
+    	String said = "";
+    	public void say(String whatToSay) {
+    		said = whatToSay;
+    	}
+    
+    	public String listen() {
+    	    return said + "\nY\n";
+		}  
     }
+    
+    
 }

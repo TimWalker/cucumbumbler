@@ -13,10 +13,10 @@ Feature: Cucumbumbler main functionality
   Then an HTML book is generated
 
   Scenario: Run a manual test
-  As a process implementing software (or hardware) in any industry
-  I'd like to be able to run manual and exploratory tests against the system
-  So that I can perform the highest ROI kinds of manual testing and augment automation
+     As a process implementing software (or hardware) in any industry
+     I'd like to be able to run manual and exploratory tests against the system
+     So that I can perform the highest ROI kinds of manual testing and augment automation
 
-  Given there are feature files present in "/tmp/cucumbumbler/features/";
-  When I run "manual testing"
-  Then Cucumbumbler interacts with a human to manually run tests
+     Given there are feature files present in "/tmp/cucumbumbler/features/";
+     When I run "manual testing"
+     Then Cucumbumbler generates test results from the manual human interaction 
