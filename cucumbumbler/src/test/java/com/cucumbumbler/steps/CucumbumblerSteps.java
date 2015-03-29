@@ -3,25 +3,31 @@ package com.cucumbumbler.steps;
 import static org.junit.Assert.assertTrue;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
 
 import org.apache.commons.io.FileUtils;
 
 import com.cucumbumbler.app.Cucumbumbler;
+import com.cucumbumbler.app.CucumbumblerCommandRunner;
 import com.cucumbumbler.app.FakeBumbler;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.api.PendingException;
+import cucumber.deps.com.thoughtworks.xstream.io.path.Path;
 
 public class CucumbumblerSteps {
 	
-	String featurePath = "";
-
-    @Given("^there are feature files present in \"(.*?)\";$")
-    public void there_are_feature_files_present_in(String featurePath) throws Throwable {
-    	this.featurePath = featurePath;
+	String featurePath = "/tmp/cucumbumbler/features/";
+	String resultFilePath = "/tmp/cucumbumbler/cucumbumbler_test_results.txt";
+	
+    @Given("^there are feature files present$")
+    public void there_are_feature_files_present() throws Throwable {
+    	cleanResults();
     	deployTestFeatures(featurePath);
     	Cucumbumbler cucumbumbler = new Cucumbumbler();
         Boolean thereAreFeatureFilesPresent = cucumbumbler.thereAreFeatureFilesPresent(featurePath);
@@ -47,8 +53,8 @@ public class CucumbumblerSteps {
 
     @Then("^Cucumbumbler generates test results from the manual human interaction$")
     public void cucumbumbler_generates_test_results_from_the_manual_human_interaction() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    	File file = new File(resultFilePath);
+    	assertTrue("Cucumber Results were created: ", file.exists());
     }
 
     private void deployTestFeatures(String feature_path) {
@@ -67,9 +73,25 @@ public class CucumbumblerSteps {
     	cucumbumbler.makeABook(featurePath);
     }
     
+    private void cleanResults()
+    {
+    	File file = new File(resultFilePath);
+    	if (file.exists()) {
+    		file.delete();
+    	}
+    }
+   
     private void manualTesting()
     {
-    	Cucumbumbler cucumbumbler = new Cucumbumbler();
-    	cucumbumbler.manualTesting(featurePath, new FakeBumbler());
+    	cleanResults();
+    	String results = CucumbumblerCommandRunner.runCommand("./cucumbumbler --bumble -f " + featurePath);
+       	try {
+			PrintWriter out = new PrintWriter(resultFilePath);
+			out.println(results);
+			out.flush();
+			out.close();
+		} catch (FileNotFoundException e) {
+			System.out.println("Error with results file in manual testing: " + e.getMessage());
+		}
     }
 }
