@@ -11,7 +11,6 @@ public class StandardBumbler implements Bumbler {
 	public String listen() {
 		Scanner in = new Scanner(System.in);
 	    String response = in.next();
-	    in.close();
 	    return response;
 	}
 
