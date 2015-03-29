@@ -87,7 +87,7 @@ public class CucumbumblerTest extends TestCase {
     	deployTestFeatures(FEATURE_DIR);
         Cucumbumbler cucumbumbler = new Cucumbumbler();
         cucumbumbler.getFeatures(FEATURE_DIR);
-        String testResults = cucumbumbler.parseFeaturesAsHumanTester(new FakeHuman());  
+        String testResults = cucumbumbler.parseFeaturesAsHumanTester(new FakeBumbler());  
         assertTrue("Manual test results should be present: ", testResults.length() > 0);
     }
     
@@ -100,17 +100,6 @@ public class CucumbumblerTest extends TestCase {
     		e.printStackTrace();
     	}
     }   
-    
-    class FakeHuman implements Bumbler {
-    	String said = "";
-    	public void say(String whatToSay) {
-    		said = whatToSay;
-    	}
-    
-    	public String listen() {
-    	    return said + "\nY\n";
-		}  
-    }
     
     
 }
