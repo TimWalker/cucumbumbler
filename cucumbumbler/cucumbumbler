@@ -1,2 +1,2 @@
-java -cp target/classes/:target/* com.cucumbumbler.app.CucumbumblerMain
+java -cp target/classes/:target/* com.cucumbumbler.app.CucumbumblerMain "$@"
 
