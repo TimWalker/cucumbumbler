@@ -35,7 +35,6 @@ public class CucumbumblerBumblerFormatter implements Reporter, Formatter {
 
 	private void captureListen(String listen) {
 		try {
-			System.out.println(listen);
 			bumblerOut.append(listen);
 		} catch (IOException e) {
 			;

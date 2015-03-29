@@ -1,0 +1,2 @@
+java -cp target/classes/:target/* com.cucumbumbler.app.CucumbumblerMain
+
