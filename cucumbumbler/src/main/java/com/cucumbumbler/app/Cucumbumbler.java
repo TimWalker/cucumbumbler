@@ -98,7 +98,14 @@ public class Cucumbumbler
 
 	public String manualTesting(String featurePath)
 	{
-		return "";
+		getFeatures(featurePath);
+    	return parseFeaturesAsHumanTester(new StandardBumbler());
+	}
+	
+	public String manualTesting(String featurePath, Bumbler bumbler)
+	{
+		getFeatures(featurePath);
+    	return parseFeaturesAsHumanTester(bumbler);
 	}
 	
 	public String parseFeaturesAsHumanTester(Bumbler bumbler) {

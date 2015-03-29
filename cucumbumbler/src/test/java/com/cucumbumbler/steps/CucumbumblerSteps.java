@@ -8,6 +8,7 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 
 import com.cucumbumbler.app.Cucumbumbler;
+import com.cucumbumbler.app.FakeBumbler;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -69,6 +70,6 @@ public class CucumbumblerSteps {
     private void manualTesting()
     {
     	Cucumbumbler cucumbumbler = new Cucumbumbler();
-    	cucumbumbler.manualTesting(featurePath);
+    	cucumbumbler.manualTesting(featurePath, new FakeBumbler());
     }
 }
