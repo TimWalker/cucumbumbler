@@ -31,7 +31,7 @@ public class CucumbumblerCLI {
 	 CommandLine cmd = null;
 	 try {
 		cmd = parser.parse(options, args);
-
+ 
 		if (cmd.hasOption("h")){
 			 help();
 			 return;

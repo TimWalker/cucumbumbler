@@ -1,8 +1,6 @@
 package com.cucumbumbler.app;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class StandardBumbler implements Bumbler {
 
@@ -11,7 +9,10 @@ public class StandardBumbler implements Bumbler {
 	}
 
 	public String listen() {
-		return System.console().readLine();
+		Scanner in = new Scanner(System.in);
+	    String response = in.next();
+	    in.close();
+	    return response;
 	}
 
 }
