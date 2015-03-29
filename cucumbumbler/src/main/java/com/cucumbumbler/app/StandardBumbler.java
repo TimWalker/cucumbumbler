@@ -11,17 +11,7 @@ public class StandardBumbler implements Bumbler {
 	}
 
 	public String listen() {
-		String input="";
-		try{
-			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	 
-			while((input=br.readLine())!=null){
-			}
-	 
-		}catch(IOException io){
-			io.printStackTrace();
-		}	
-		return input;
+		return System.console().readLine();
 	}
 
 }
