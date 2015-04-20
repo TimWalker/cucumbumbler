@@ -33,7 +33,7 @@ public class CucumbumblerCommandRunner {
 				stdOut.write('\n');
 				stdOut.flush();
 				System.out.println(s);
-				results.append(s);
+				results.append("Y\n");
 			}
          
 			// read any errors from the attempted command

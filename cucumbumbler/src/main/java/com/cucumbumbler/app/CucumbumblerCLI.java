@@ -63,7 +63,8 @@ public class CucumbumblerCLI {
  private void bumble() {
 	 System.out.println("Welcome to Cucumbumbler. Bumbling");
 	 Cucumbumbler cucumbumbler = new Cucumbumbler();
-	 cucumbumbler.manualTesting(featureDir);	 
+	 String results = cucumbumbler.manualTesting(featureDir);	
+	 cucumbumbler.writeResults(featureDir, results);
  }
  
  private void publish() {

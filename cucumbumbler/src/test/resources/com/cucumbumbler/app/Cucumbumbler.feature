@@ -12,6 +12,8 @@ Feature: Cucumbumbler main functionality
   	When I run "make a book"
   	Then an HTML book is generated
 
+  @runsthroughthecommandline
+  @wip
   Scenario: Run a manual test
      As a process implementing software (or hardware) in any industry
      I'd like to be able to run manual and exploratory tests against the system

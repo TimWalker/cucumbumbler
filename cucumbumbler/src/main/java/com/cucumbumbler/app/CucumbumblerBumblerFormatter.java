@@ -35,7 +35,7 @@ public class CucumbumblerBumblerFormatter implements Reporter, Formatter {
 
 	private void captureListen(String listen) {
 		try {
-			System.out.println(listen);
+			//System.out.println(listen);
 			bumblerOut.append(listen);
 		} catch (IOException e) {
 			;
@@ -89,49 +89,41 @@ public class CucumbumblerBumblerFormatter implements Reporter, Formatter {
 		;
 	}
 
-	@Override
 	public void startOfScenarioLifeCycle(Scenario scenario) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void endOfScenarioLifeCycle(Scenario scenario) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void before(Match match, Result result) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void result(Result result) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void after(Match match, Result result) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void match(Match match) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void embedding(String mimeType, byte[] data) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void write(String text) {
 		// TODO Auto-generated method stub
 		

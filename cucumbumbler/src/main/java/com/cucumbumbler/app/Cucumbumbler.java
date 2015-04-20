@@ -3,6 +3,7 @@ package com.cucumbumbler.app;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -126,5 +127,15 @@ public class Cucumbumbler
 			feature.parsed = true;
 		}
 		return results.toString();
+	}
+	
+	public void writeResults(String featureDir, String results){
+    	File resultsPath = new File(featureDir).getParentFile();
+    	String resultsFile = resultsPath + "/testResults.txt";
+		try {
+			FileUtils.writeStringToFile(new File(resultsFile), results) ;
+		} catch (IOException e) {
+			System.out.println("Error writing results: " + e.getMessage());
+		}
 	}
 }
