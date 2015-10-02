@@ -20,5 +20,12 @@ Feature: Cucumbumbler main functionality
      So that I can perform the highest ROI kinds of manual testing and augment automation
 
      Given there are feature files present
-     When I run "manual testing"
-     Then Cucumbumbler generates test results from the manual human interaction 
+ 	 When I run "manual testing"
+     Then Cucumbumbler generates test results from the manual human interaction
+     
+     Scenario: scenario description
+         Given something
+         When an action is performed
+         Then something should be asserted
+  
+  
