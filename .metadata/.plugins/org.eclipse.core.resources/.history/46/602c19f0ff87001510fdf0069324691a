@@ -1,0 +1,44 @@
+Feature: Cucumbumbler main functionality
+  In order to create a single source-of-truth about my product
+  As a system developing a product
+  I want to manage all my quadrant tests
+
+  Scenario: Generate a book
+  	As a process implementing software (or hardware) in any industry
+  	I'd like to organize a single source-of-truth in a "book" format using executable specifications
+  	So that I have a single, transparent, reference to the software endeavor
+
+  	Given there are feature files present
+  	When I run "make a book"
+  	Then an HTML book is generated
+
+  @runsthroughthecommandline
+  @wip
+  Scenario: Run a manual test
+     As a process implementing software (or hardware) in any industry
+     I'd like to be able to run manual and exploratory tests against the system
+     So that I can perform the highest ROI kinds of manual testing and augment automation
+
+     Given there are feature files present
+ 	 When I run "manual testing"
+     Then Cucumbumbler generates test results from the manual human interaction
+     
+   @wip 
+   @instruction
+#   Scenario: scenario description
+#     Given something
+#     When an action is performed
+#     Then something should be asserted
+#     
+#   Scenario Outline: scenario description
+#   	 Given something with <param_1>
+#   	 And something with <param_2>
+#     Then check <param_3> is the output
+#   		
+#   	 Examples:
+#   		| param_1 | param_2 | param_3 |
+#   		| value1_1 | value1_2 | value1_3 |
+#   		| value2_1 | value2_2 | value2_3 |
+#   		| value3_1 | value3_2 | value3_3 |
+#  
+#  

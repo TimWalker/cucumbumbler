@@ -57,6 +57,25 @@ public class CucumbumblerSteps {
     	assertTrue("Cucumber Results were created: ", file.exists());
     }
 
+    //instructional 
+    @Given("^something$")
+    public void something() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @When("^an action is performed$")
+    public void an_action_is_performed() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Then("^something should be asserted$")
+    public void something_should_be_asserted() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
     private void deployTestFeatures(String feature_path) {
     	String srcDir = "src/test/resources/com/cucumbumbler/test_features";
     	String dstDir = feature_path;

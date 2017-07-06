@@ -1,0 +1,171 @@
+2015-08-26 07:42:55,150 [ModalContext] ERROR o.e.m.i.d.MavenDiscoveryService - Status ERROR: org.eclipse.equinox.p2.discovery code=0 Failed to discover all connectors. null children=[Status ERROR: org.eclipse.equinox.p2.discovery code=0 M2ERemoteBundleDiscoveryStrategy failed with an error org.eclipse.equinox.p2.core.ProvisionException: Unknown Host: http://download.eclipse.org/technology/m2e/discovery/directory-1.4.xml]
+2015-08-26 07:43:02,454 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cucumbumbler.app:cucumbumbler:1.0-SNAPSHOT @ /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/pom.xml.
+2015-08-26 07:43:04,066 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cucumbumbler/src/main/java
+2015-08-26 07:43:04,069 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cucumbumbler/src/test/java
+2015-08-26 07:43:04,069 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cucumbumbler/src/test/resources
+2015-08-26 07:43:04,217 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Project import completed 5 sec
+2015-08-26 07:43:04,592 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-08-26 07:43:04,593 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2015-08-26 07:43:05,574 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cucumbumbler.app:cucumbumbler:1.0-SNAPSHOT @ /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/pom.xml.
+2015-08-26 07:43:07,891 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 07:43:07,892 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-08-26 07:43:07,896 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 07:43:07,906 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-08-26 09:55:20,907 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 09:55:20,909 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-08-26 09:55:20,912 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 09:55:20,918 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-08-26 09:55:49,152 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 09:55:49,152 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-08-26 09:55:49,154 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 09:55:49,155 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-08-26 09:58:33,888 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 09:58:33,891 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-08-26 09:58:33,893 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 09:58:33,906 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-08-26 10:15:06,739 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 10:15:06,740 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-08-26 10:15:06,742 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 10:15:06,744 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-08-26 10:44:35,150 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 10:44:35,158 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-08-26 10:44:35,161 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-08-26 10:44:35,165 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-02 10:22:32,735 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cucumbumbler.app:cucumbumbler:1.0-SNAPSHOT @ /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/pom.xml.
+2015-10-02 10:22:36,753 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:22:36,754 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-02 10:22:36,759 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:22:36,772 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-02 10:30:21,418 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:30:21,419 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-02 10:30:21,422 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:30:21,431 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-02 10:31:04,255 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:31:04,256 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-02 10:31:04,259 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:31:04,262 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-10-02 10:31:31,352 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:31:31,353 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-02 10:31:31,355 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:31:31,455 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-02 10:31:50,868 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:31:50,869 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-02 10:31:50,870 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:31:50,871 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-10-02 10:33:01,546 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:33:01,547 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-02 10:33:01,549 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:33:01,553 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-02 10:33:33,307 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:33:33,307 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-02 10:33:33,310 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:33:33,313 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-02 10:33:55,146 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:33:55,146 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-02 10:33:55,149 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-02 10:33:55,150 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-05 10:57:57,682 [Worker-514] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 10:57:57,683 [Worker-514] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-05 10:57:57,686 [Worker-514] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 10:57:57,690 [Worker-514] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-05 11:04:14,448 [Worker-506] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:04:14,448 [Worker-506] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-05 11:04:14,450 [Worker-506] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:04:14,452 [Worker-506] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-05 11:06:36,703 [Worker-519] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:06:36,705 [Worker-519] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-05 11:06:36,707 [Worker-519] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:06:36,708 [Worker-519] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-10-05 11:07:08,428 [Worker-517] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:07:08,429 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-05 11:07:08,431 [Worker-517] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:07:08,433 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-05 11:08:16,439 [Worker-517] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:08:16,440 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-05 11:08:16,442 [Worker-517] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:08:16,443 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-05 11:10:58,653 [Worker-517] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:10:58,655 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-05 11:10:58,657 [Worker-517] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:10:58,660 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-05 11:10:59,718 [Worker-517] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:10:59,719 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-05 11:10:59,721 [Worker-517] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-05 11:10:59,722 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-06 07:02:37,789 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cucumbumbler.app:cucumbumbler:1.0-SNAPSHOT @ /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/pom.xml.
+2015-10-06 07:02:47,602 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-06 07:02:47,607 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-06 07:02:47,612 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-06 07:02:47,622 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-07 08:45:11,004 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-07 08:45:11,007 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-07 08:45:11,010 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-07 08:45:11,028 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-10-16 11:38:17,139 [Worker-461] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-16 11:38:17,146 [Worker-461] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-10-16 11:38:17,150 [Worker-461] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-10-16 11:38:17,159 [Worker-461] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-11-09 11:21:44,798 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-09 11:21:44,802 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-11-09 11:21:44,806 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-09 11:21:44,813 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-11-10 17:06:47,784 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-10 17:06:47,786 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-11-10 17:06:47,789 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-10 17:06:47,794 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-11-10 17:08:12,863 [Worker-138] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-10 17:08:12,863 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-11-10 17:08:12,865 [Worker-138] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-10 17:08:12,871 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-11-10 17:08:22,074 [Worker-138] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-10 17:08:22,074 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-11-10 17:08:22,076 [Worker-138] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-10 17:08:22,078 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-11-11 19:21:17,664 [Worker-477] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-11 19:21:17,667 [Worker-477] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-11-11 19:21:17,670 [Worker-477] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-11 19:21:17,692 [Worker-477] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-11-12 09:25:31,978 [Worker-586] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-12 09:25:31,981 [Worker-586] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-11-12 09:25:31,983 [Worker-586] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-12 09:25:31,988 [Worker-586] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-11-22 12:58:57,039 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-22 12:58:57,048 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-11-22 12:58:57,051 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-22 12:58:57,060 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-11-30 20:45:19,916 [Worker-829] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-30 20:45:19,927 [Worker-829] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-11-30 20:45:19,932 [Worker-829] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-30 20:45:19,948 [Worker-829] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-12-01 10:21:36,337 [Worker-956] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-01 10:21:36,343 [Worker-956] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-12-01 10:21:36,346 [Worker-956] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (US-ASCII actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-01 10:21:36,349 [Worker-956] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-12-07 17:14:40,533 [Worker-632] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-07 17:14:40,549 [Worker-632] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-12-07 17:14:40,554 [Worker-632] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-07 17:14:40,564 [Worker-632] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-12-07 17:17:47,941 [Worker-637] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-07 17:17:47,943 [Worker-637] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-12-07 17:17:47,946 [Worker-637] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-07 17:17:47,950 [Worker-637] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-12-07 17:20:08,763 [Worker-637] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-07 17:20:08,764 [Worker-637] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-12-07 17:20:08,766 [Worker-637] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-07 17:20:08,775 [Worker-637] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-12-09 09:34:16,594 [Worker-790] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 09:34:16,617 [Worker-790] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2015-12-09 09:34:16,621 [Worker-790] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-12-09 09:34:16,628 [Worker-790] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-06-09 11:36:46,712 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-09 11:36:46,717 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2016-06-09 11:36:46,719 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-09 11:36:46,726 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 11:53:57,712 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-05 11:53:57,725 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2017-03-05 11:53:57,727 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-05 11:53:57,739 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 11:53:59,306 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-05 11:53:59,307 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/timwalker/Documents/theagiletester/Cucumbumbler/Cucumbumbler/cucumbumbler/src/main/resources
+2017-03-05 11:53:59,309 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-05 11:53:59,313 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
